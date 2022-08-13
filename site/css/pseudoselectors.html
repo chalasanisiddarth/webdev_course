@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hyperlinks</title>
+    <!--div > p applies only to the immediate child p tags-->
+    <!--div p applies to every child p tag within the div tag-->
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        .red{
+            color: red;
+        }
+        p.blue{
+            color: blue;
+        }
+        div > p{
+            color: red;
+        }
+        .highlight{
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .lightblue{
+            color: lightblue;
+            opacity: 1;
+        }
+        h3{
+            font-style: italic;
+        }
+        .white{
+            color: white;
+        }
+        .blue{
+            color: blue;
+        }
+        p{
+            font-size: 20px;
+        }
+        li{
+            text-decoration: none;
+        }
+        a:link, a:visited{
+            color: yellow;
+            text-decoration: none;
+            background-color: blue;
+            border: 1px solid red;
+            margin-bottom: 5px;
+        }
+        a:hover, a:active{
+            background-color: red;
+        }
+        
+        ol li:nth-child(){
+            font-size: 24px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1 id="top" class="white">Premier League Top 6</h1>
+
+    <ol>
+        <li><a href="#section1">Click here to go to Liverpool</a></li>
+        <li><a href="#section2">Click here to go to Man Utd</a></li>
+        <li><a href="#section3">Click here to go to Tottenham</a></li>
+        <li><a href="#section4">Click here to go to Man City</a></li>
+        <li><a href="#section5">Click here to go to Chelsea</a></li>
+        <li><a href="#section6">Click here to go to Arsenal</a></li>
+    </ol>
+    
+    <section id="section1">
+        <h3 class="red"r>Liverpool</h3>
+        <img src="https://cdn.wallpapersafari.com/77/47/5bdtcv.jpg" width="400" height="250" alt="Image could not be loaded"><br>
+        <p class="red">
+            Liverpool Football Club is a professional football club based in Liverpool, England. The club competes in the Premier League, the top tier of English football. Founded in 1892, the club joined the Football League the following year and has played its home games at Anfield since its formation. Domestically, the club has won nineteen League titles, eight FA Cups, a record nine League Cups and sixteen FA Community Shields. In international competitions, the club has won six European Cups, three UEFA Cups, four UEFA Super Cups—all English records—and one FIFA Club World Cup. The club established itself as a major force in domestic and European football in the 1970s and 1980s, when Bill Shankly, Bob Paisley, Joe Fagan and Kenny Dalglish, led the club to a combined eleven League titles and four European Cups. Liverpool won two further European Cups in 2005 and 2019 under the management of Rafael Benítez and Jürgen Klopp, respectively; the latter led Liverpool to a nineteenth League title in 2020, the club's first during the Premier League era.
+        </p>
+    </section>
+    
+    <section id="section2">
+        <h3 class="red">Man Utd</h3>
+        <img width="400" height="250" src="data:image/png;base64,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" alt="Image could not be loaded"><br>
+        <p class="red">
+            Manchester United Football Club, commonly referred to as Man United, or simply United, is a professional football club based in the Old Trafford area of Manchester, England. The club competes in the Premier League, the top division in the English football league system. Manchester United have won a record 20 League titles, 12 FA Cups, five League Cups, and a record 21 FA Community Shields. They have won the European Cup/UEFA Champions League three times, and the UEFA Europa League, the UEFA Cup Winners' Cup, the UEFA Super Cup, the Intercontinental Cup and the FIFA Club World Cup once each.[5][6] In 1968, under the management of Matt Busby, 10 years after eight of the club's players were killed in the Munich air disaster, they became the first English club to win the European Cup. Alex Ferguson is the club's longest-serving and most successful manager, winning 38 trophies, including 13 league titles, 5 FA Cups, and 2 UEFA Champions League titles between 1986 and 2013.[7][8][9] In the 1998–99 season, under Ferguson, the club became the first in the history of English football to achieve the European treble of the Premier League, FA Cup, and UEFA Champions League.[10] In winning the UEFA Europa League under José Mourinho in 2016–17, they became one of five clubs to have won the original three main UEFA club competitions (the Champions League, Europa League and Cup Winners' Cup).
+        </p>
+    </section>
+    <section id="section3">
+        <h3 class="white">Tottenham</h3>
+        <img width="400" height="250" src="data:image/png;base64,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" alt="Image could not be loaded">
+        <p class="white">
+            Tottenham Hotspur Football Club, commonly referred to as Tottenham or Spurs, is an English professional football club based in Tottenham, London. It competes in the Premier League, the top flight of English football. Founded in 1882, Tottenham's emblem is a cockerel standing upon a football, with the Latin motto Audere est Facere ("to dare is to do"). The club has traditionally worn white shirts and navy blue shorts home kit since the 1898–99 season. Their training ground is on Hotspur Way in Bulls Cross in the London Borough of Enfield. After its inception, Tottenham won the FA Cup for the first time in 1901, the only non-League club to do so since the formation of the Football League in 1888. Tottenham were the first club in the 20th century to achieve the League and FA Cup Double, winning both competitions in the 1960–61 season. After successfully defending the FA Cup in 1962, in 1963 they became the first British club to win a UEFA club competition – the European Cup Winners' Cup.[4] They were also the inaugural winners of the UEFA Cup in 1972, becoming the first British club to win two different major European trophies. They collected at least one major trophy in each of the six decades from the 1950s to 2000s – an achievement only matched by Manchester United.[5][6]
+        </p>
+    </section>
+    <section id="section4">
+        <h3 class="lightblue">Man City</h3>
+        <img width="400" height="250" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcTeBhWJWQaI02O0pdbW0clZtRZffWVZFM48KWYwdauE_p4aLj-kGlSjcjJFIX2KANRg&usqp=CAU" alt="Image could not be loaded">
+        <p class="lightblue">
+            Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's, it became Ardwick Association Football Club in 1887 and Manchester City in 1894. Manchester City joined the Football League in 1892, and won their first major honour, the FA Cup, in 1904. The club had success in the late 1960s and early 1970s, winning the League, European Cup Winners Cup, FA Cup and League Cup under the management of Joe Mercer and Malcolm Allison. After losing the 1981 FA Cup Final, the club went through a period of decline, culminating in relegation to the third tier of English football for the only time in its history in 1998. They won promotion back to the top tier in 2001–02 and have remained in the Premier League since.
+        </p>
+    </section>
+    <section id="section5">
+        <h3 class="blue">Chelsea</h3>
+        <img width="400" height="250" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-3l7lXPYLEj2OizGarsfFQj0Gctloc4VzQ&usqp=CAU" alt="Image could not be loaded">
+        <p class="blue">
+            Chelsea Football Club is an English professional football club based in Fulham, in the western part of London. Founded in 1905, they play their home games at Stamford Bridge. The club competes in the Premier League, the top division of English football. Chelsea are one of five clubs to have won all three of UEFA's main club competitions, being the first English club to achieve the UEFA treble, and the only club to have won all three major European competitions twice. They are also the only London club to have won the Champions League and the Club World Cup.[5] Domestically, the club has won six league titles, eight FA Cups, five League Cups, and four FA Community Shields. Internationally, they have won the UEFA Champions League, the UEFA Europa League, the UEFA Cup Winners' Cup and the UEFA Super Cup twice each, and one FIFA Club World Cup since their inception. In terms of overall trophies won, it is the fourth-most successful club in English football.
+        </p>
+    </section>
+    <div>
+        <h3 id="section6" class="red">Arsenal</h3>
+        <img width="400" height="250" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStmH3ft33FoIkzBC0A4Kd1BO-XurkDtSM3g&usqp=CAU" alt="Image could not be loaded">
+        <p>
+            Arsenal Football Club is a professional football club based in Islington, London, England. Arsenal plays in the Premier League, the top flight of English football. Arsenal was the first club from the South of England to join the Football League in 1893, and they reached the First Division in 1904. Relegated only once, in 1913, they continue the longest streak in the top division,[7] and have won the second-most top-flight matches in English football history.[8] In the 1930s, Arsenal won five League Championships and two FA Cups, and another FA Cup and two Championships after the war. In 1970–71, they won their first League and FA Cup Double. Between 1989 and 2005, they won five League titles and five FA Cups, including two more Doubles. They completed the 20th century with the highest average league position.[9] Between 1998 and 2017, Arsenal qualified for the UEFA Champions League for 19 straight seasons.
+        </p>
+        <a href="#top">Back to top</a>
+    </div>
+    <div>
+        This is the purpose of
+        <span id="highlight">id selector</span>
+    </div>
+    
+    
+</body>
+</html>
